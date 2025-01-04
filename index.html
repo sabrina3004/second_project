@@ -1,49 +1,649 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
     <header>
-        <!-- nav bar -->
-        <section class="nav-container">
-            <nav class="nav-parent">
-                <img style="height:34px; width:143px;" src="./images/logo.png" alt="">
-                <ul class="nav-ul">
-                    <li><a href="" style="font-weight: bold;">Home</a></li>
-                    <li><a href="">Community</a></li>
-                    <li><a href="">Blogs</a></li>
-                    <li><a href="">Events</a></li>
-                </ul>
-            </nav>
-            <div>
-                <i class="fa-solid fa-magnifying-glass" style="position: relative; left:23px;"></i>
-                <input type="text" placeholder="search"style="padding-left:25px;height:30px;border-radius:10px;margin-right:42px;">
-                <button class="nav-btn">Login</button>
+      <!-- nav bar -->
+      <section class="nav-container">
+        <nav class="nav-parent">
+          <img
+            style="height: 34px; width: 143px"
+            src="./images/logo.png"
+            alt=""
+          />
+          <ul class="nav-ul">
+            <li><a href="" style="font-weight: bold">Home</a></li>
+            <li><a href="">Community</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Events</a></li>
+          </ul>
+        </nav>
+        <div class="nav-btn-section">
+          <i
+            class="fa-solid fa-magnifying-glass"
+            style="position: relative; left: 25px"
+          ></i>
+          <input
+            type="text"
+            placeholder="Search Here..."
+            class="nav-input"
+          />
+          <button class="nav-btn">Login</button>
+        </div>
+      </section>
+      <!-- <hr class="horizontal" /> -->
+      <!-- nav bar end -->
+      <!-- hero section -->
+      <section class="hero-container">
+        <div class="netbook-hero">
+          <span
+            style="
+              color: #217bf4;
+              padding: 12px 32px;
+              background-color: #e7f1fe;
+              border-radius: 10px;
+            "
+            >Netbook Community</span
+          >
+          <h1 class="hero-heading">
+            Your Solution For <br />
+            Community!
+          </h1>
+          <p class="hero-pera">
+            More than 2 billion people in over countries use social <br />
+            book to stay in touch with friends & family.
+          </p>
+          <div class="hero-btn-section">
+            <button class="nav-btn" style="margin-top: 42px; margin-right: 18px">
+              About More
+            </button>
+            <button class="hero-btn">Invite Friend</button>
+          </div>
+        </div>
+        <div>
+          <img class="hero-image" src="./images/Iamge.png" alt="" />
+        </div>
+      </section>
+      <!-- hero section end -->
+      <!-- main section start -->
+      <main>
+        <!-- why netbook start -->
+        <section class="netbook-container">
+          <!-- netbook text section -->
+          <div class="netbook-text">
+            <span
+              style="
+                color: #217bf4;
+                font-weight: 600;
+                font-size: 18px;
+                margin-bottom: 10px;
+              "
+              >Whats Netbooks?</span
+            >
+            <h1 class="netbook-textHeading">
+              Why Join to Netbook <br />
+              Social Network?
+            </h1>
+            <p style="color: #8b8b8b">
+              Recent surveys have indicated that small businesses <br />
+              recognise the ne ed they have to connect with <br />
+              consumer.
+            </p>
+            <div style="margin-top: 36px">
+              <label for="groups">
+                <input style="margin-bottom: 10px" type="radio" id="groups" />
+                Groups </label
+              ><br />
+              <label for="message">
+                <input style="margin-bottom: 10px" type="radio" id="message" />
+                Message </label
+              ><br />
+              <label for="share">
+                <input type="radio" id="share" />
+                Share
+              </label>
             </div>
+          </div>
+          <!-- netbook text section end -->
+          <!-- netbook image section start -->
+          <div class="netbook_image">
+            <div class="netbook-img" style="display: flex; align-items: center">
+              <img style="height: 360px" src="./images/Image.png" alt="" />
+            </div>
+            <div>
+              <img
+                style="display: block; height: 238px; margin-bottom: 32px"
+                src="./images/device.png"
+                alt=""
+              />
+              <img style="height: 238px" src="./images/cable.png" alt="" />
+            </div>
+          </div>
+          <!-- netbook image section end -->
         </section>
-        <hr class="horizontal">
-        <!-- nav bar end -->
-         <!-- hero section -->
-          <section class="hero-container">
-            <div>
-                <span style="color: #217BF4; padding: 12px 32px; background-color: #e7f1fe;border-radius: 10px;">Netbook Community</span>
-                <h1 class="hero-heading">Your Solution For <br> Community!</h1>
-                <p>More than 2 billion people in over countries use social <br> book to stay in touch with friends & family.</p>
-                <button class="nav-btn"style="margin-top:42px">About More</button>
-                <button class="hero-btn">Invite Friend</button>
+        <!-- why netbook end -->
+        <!-- Award section start -->
+        <div style="margin-top: 80px">
+          <section class="award_container">
+            <div class="award-card-container-one">
+              <div style="display: flex; align-items: center; gap: 10px">
+                <i class="fa-regular fa-star fa-2xl" style="color: #217bf4"></i>
+                <p style="font-weight: bold; font-size: 20px">4.8 Rating</p>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  gap: 27px;
+                  align-items: center;
+                  margin-top: 36px;
+                "
+              >
+                <img height="28" src="./images/people.png" alt="" />
+                <p style="color: #8b8b8b">
+                  <span
+                    style="color: #217bf4; font-weight: bolder; font-size: 18px"
+                    >+836K </span
+                  >Members
+                </p>
+              </div>
+              <p style="color: #8b8b8b; margin-top: 42px">
+                More than 2 billion we people over countries use socibooks we to
+                stay in touch with friends.
+              </p>
+              <p style="color: #217bf4; font-weight: 700; margin-top: 34px">
+                Join Our Community<i
+                  class="fa-solid fa-arrow-right"
+                  style="margin-left: 10px"
+                ></i>
+              </p>
             </div>
-            <div>
-                <img src="./images/Iamge.png" alt="">
+            <div class="award-card-container-one">
+              <div style="display: flex; align-items: center; gap: 10px">
+                <i class="fa-solid fa-trophy fa-2xl" style="color: #217bf4"></i>
+                <p style="font-weight: bold; font-size: 20px">Awwwards</p>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  gap: 16px;
+                  align-items: center;
+                  margin-top: 36px;
+                "
+              >
+                <i
+                  class="fa-brands fa-github fa-xl"
+                  style="margin-right: 10px; color: #ff2e00"
+                ></i>
+                <p style="color: #8b8b8b">
+                  Best of
+                  <span
+                    style="color: #217bf4; font-weight: bolder; font-size: 18px"
+                    >2021</span
+                  >
+                  on Github
+                </p>
+              </div>
+              <p style="color: #8b8b8b; margin-top: 42px">
+                More than 2 billion we people over countries use socibooks we to
+                stay in touch with friends.
+              </p>
+              <p style="color: #4a4a56; font-weight: 700; margin-top: 34px">
+                Go To Awards<i
+                  class="fa-solid fa-arrow-right"
+                  style="margin-left: 10px"
+                ></i>
+              </p>
             </div>
-             
-
+            <div style="margin-left: 35px">
+              <p
+                style="
+                  color: #217bf4;
+                  font-weight: 600;
+                  font-size: 16px;
+                  margin-bottom: 10px;
+                  margin-top: 10px;
+                "
+              >
+                Our Achievement
+              </p>
+              <h1
+                style="
+                  color: #0a093d;
+                  margin-bottom: 20px;
+                  font-weight: bolder;
+                  font-size: 28px;
+                "
+              >
+                We are Connecting <br />
+                You The Digital Life.
+              </h1>
+              <p style="color: #8b8b8b; margin-bottom: 45px; line-height: 25px">
+                The scope the Social Media becomes crucial Is helps the business
+                to directly engage with their needs and wants.
+              </p>
+              <button class="nav-btn">
+                Discover me<i
+                  class="fa-solid fa-arrow-right"
+                  style="margin-left: 10px"
+                ></i>
+              </button>
+            </div>
           </section>
-          <!-- hero section end -->
+        </div>
+        <!-- Award section end -->
+        <!-- Community section start -->
+        <section class="community-container">
+          <p
+            style="
+              color: #217bf4;
+              font-weight: 600;
+              font-size: 18px;
+              text-align: center;
+              margin-bottom: 10px;
+            "
+          >
+            Our Community
+          </p>
+          <h1 class="community-textHeading"
+          >
+            Community Main Feature
+          </h1>
+          <p style="color: #8b8b8b; text-align: center">
+            The wise man therefore always holds in these matters <br />
+            to this principle of selection.
+          </p>
+          <!-- card-container -->
+          <div style="margin-top: 55px">
+            <div class="card-container">
+              <div class="card">
+                <img height="67px" src="./images/card-1.png" alt="" />
+                <div style="margin-left: 30px">
+                  <h3>Members, Friends</h3>
+                  <p style="color: #8b8b8b; margin-top: 10px">
+                    Members, Friends Connection ( like followers ), Private
+                    Message
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img height="67px" src="./images/card-2.png" alt="" />
+                <div style="margin-left: 30px">
+                  <h3 style="font-size: 20px; margin-bottom: 10px">Groups</h3>
+                  <p style="color: #8b8b8b">
+                    Your users can create groups to let other users to join and
+                    talk
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img height="67px" src="./images/card-3.png" alt="" />
+                <div style="margin-left: 30px">
+                  <h3 style="font-size: 20px; margin-bottom: 10px">Forum</h3>
+                  <p style="color: #8b8b8b">
+                    Forum is ready by BBPress. Your users can make topics and
+                    talk.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img height="67px" src="./images/card-4.png" alt="" />
+                <div style="margin-left: 30px">
+                  <h3 style="font-size: 20px; margin-bottom: 10px">
+                    Custom Module
+                  </h3>
+                  <p style="color: #8b8b8b">
+                    You can create Members, Groups Module. We already created 3
+                    modules. It's by drag & drop live builder.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img height="67px" src="./images/card-5.png" alt="" />
+                <div style="margin-left: 30px">
+                  <h3 style="font-size: 20px; margin-bottom: 10px">
+                    List Builder
+                  </h3>
+                  <p style="color: #8b8b8b">
+                    Members, Groups list can be modified by drag & drop live
+                    builder.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img height="67px" src="./images/card-6.png" alt="" />
+                <div style="margin-left: 30px">
+                  <h3 style="font-size: 20px; margin-bottom: 10px">
+                    List Scroll Effects
+                  </h3>
+                  <p style="color: #8b8b8b">
+                    8 different scroll effects are ready. You can always change
+                    by your tastes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Community section end -->
+        <!-- Active member -->
+        <section class="active-main-container">
+          <p
+            style="
+              color: #217bf4;
+              font-weight: 600;
+              font-size: 18px;
+              text-align: center;
+              margin-bottom: 10px;
+            "
+          >
+            Valuable Team
+          </p>
+          <h1 class="active-textHeading">
+            Our Active Members
+          </h1>
+          <p style="color: #8b8b8b; text-align: center">
+            when an unknown printer took a galley of type and meeting <br />fari
+            scrambled it.
+          </p>
+          <div class="active-tab">
+            <p style="color: #6a6980; font-size: 20px">Newest</p>
+            <p style="color: #6a6980; font-size: 20px">Popular</p>
+            <p class="nav-btn" style="font-size: 20px">Active</p>
+          </div>
+          <div class="active-card-container">
+            <div class="active-card">
+              <div class="active-card-image">
+                <div  style="position: relative">
+                  <img class="active-first-img" src="./images/5.png" alt="" />
+                  <img class="active-second-img" src="./images/1.png" alt="" />
+                  <div class="active-text">
+                    <p>Fahim Rahman</p>
+                  <p>@rahman</p>
+                  </div>
+                </div>
+              </div>
+              <div class="active-card-image">
+                <div style="position: relative">
+                  <img class="active-first-img" src="./images/5.png" alt="" />
+                  <img class="active-second-img" src="./images/2.png" alt="" />
+                  <div class="active-text">
+                    <p>Kazi Rahman</p>
+                  <p>@Rahman</p>
+                  </div>
+                </div>
+              </div>
+              <div class="active-card-image">
+                <div style="position: relative">
+                  <img class="active-first-img" src="./images/5.png" alt="" />
+                  <img class="active-second3-img" src="./images/3.png" alt="" />
+                  <div class="active-text">
+                    <p>Masterero Ali</p>
+                  <p>@Master</p>
+                  </div>
+                </div>
+              </div>
+              <div class="active-card-image">
+                <div style="position: relative">
+                  <img class="active-first-img" src="./images/5.png" alt="" />
+                  <img class="active-second3-img" src="./images/4.png" alt="" />
+                  <div class="active-text">
+                    <p>Alia Karon</p>
+                  <p>@Alia</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Active member end -->
+        <!-- app section -->
+        <section class="app-section-container">
+          <div>
+            <div>
+              <p
+                style="
+                  color: #217bf4;
+                  font-weight: 600;
+                  font-size: 18px;
+                  margin-bottom: 10px;
+                "
+              >
+                Get Our Application
+              </p>
+              <h1 class="app-textHeading">
+                You Can Easily Find <br />
+                This App…!
+              </h1>
+              <p style="color: #8b8b8b">
+                I say chap that’s suing lavatory chip shop <br />gosh off his
+                smashing boot are you taking <br />the piss posh loo brilliant.
+              </p>
+            </div>
+            <div style="margin-left: -16px">
+              <img
+                style="position: relative; top: 22px"
+                src="./images/6.png"
+                alt=""
+              />
+              <img src="./images/7.png" alt="" />
+            </div>
+          </div>
+          <div>
+            <img class="app-img" src="./images/8.png" alt="" />
+          </div>
+        </section>
+        <!-- app section end -->
+        <!-- latest news section -->
+        <section class="news-container">
+          <div>
+            <p
+              style="
+                color: #217bf4;
+                font-weight: 600;
+                font-size: 18px;
+                margin-bottom: 10px;
+                text-align: center;
+              "
+            >
+              Get Our Application
+            </p>
+            <h1 class="latest-textHeading" style="">
+              Latest News
+            </h1>
+          </div>
+          <div class="news-card-container">
+            <div class="news-card">
+              <img src="./images/9.png" alt="" />
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 14px;
+                  margin-top: 25px;
+                "
+              >
+                <div
+                  style="border: 2px solid #ffaf2e; width: 50px; height: 0"
+                ></div>
+                <p style="font-size: 16px; font-weight: 600; color: #0a093d">
+                  It Does Not Matter Hows <br />
+                  Slowly go as Long
+                </p>
+              </div>
+              <p style="margin: 24px 65px; font-size: 12px; color: #4a4a56">
+                Continue Reading<i
+                  class="fa-solid fa-arrow-right"
+                  style="margin-left: 10px; font-size: x-small; color: #4a4a56"
+                ></i>
+              </p>
+            </div>
+            <div class="news-card">
+              <img src="./images/10.png" alt="" />
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 14px;
+                  margin-top: 25px;
+                "
+              >
+                <div
+                  style="border: 2px solid #ffaf2e; width: 50px; height: 0"
+                ></div>
+                <p style="font-size: 16px; font-weight: 600; color: #0a093d">
+                  Netbook Network Added <br />New Photo Filter
+                </p>
+              </div>
+
+              <p style="margin: 24px 65px; font-size: 12px; color: #217bf4">
+                Continue Reading<i
+                  class="fa-solid fa-arrow-right"
+                  style="margin-left: 10px; font-size: x-small; color: #217bf4"
+                ></i>
+              </p>
+            </div>
+            <div class="news-card">
+              <img src="./images/11.png" alt="" />
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 14px;
+                  margin-top: 25px;
+                "
+              >
+                <div
+                  style="border: 2px solid #ffaf2e; width: 50px; height: 0"
+                ></div>
+                <p style="font-size: 16px; font-weight: 600; color: #0a093d">
+                  We Optimised Netbooks <br />
+                  Better Navigation
+                </p>
+              </div>
+              <p style="margin: 24px 65px; font-size: 12px; color: #4a4a56">
+                Continue Reading<i
+                  class="fa-solid fa-arrow-right"
+                  style="margin-left: 10px; font-size: x-small; color: #4a4a56"
+                ></i>
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- latest news section end -->
+      </main>
+      <!-- main section end-->
+      <!-- footer start -->
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-row">
+            <div class="footer-col">
+              <h3>Home</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h3>Resources</h3>
+              <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Guides</a></li>
+                <li><a href="#">Help Center</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h3>Community</h3>
+              <ul>
+                <li><a href="#">NewsFeed</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Friends</a></li>
+                <li><a href="#">Forums</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h3>Main links</h3>
+              <ul>
+                <li><a href="#">Members</a></li>
+                <li><a href="#">Activity</a></li>
+                <li><a href="#">Groups</a></li>
+                <li><a href="#">Private Group</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-left-container">
+            <h3 style="color: #fff; margin-bottom: 18px; font-size: 16px">
+              Subscribe Cirkle <br />
+              Newsletter
+            </h3>
+            <p
+              style="
+                color: #e7e7e7;
+                margin-bottom: 32px;
+                font-size: 12px;
+                line-height: 20px;
+              "
+            >
+              Subscribe to be the first one to know <br />
+              about updates. Enter your email
+            </p>
+            <input
+              class="footer-btn"
+              type="text"
+              name=""
+              id=""
+              placeholder="Email Address"
+            />
+            <button class="subscribe-btn">Subscribe</button>
+          </div>
+        </div>
+        <div class="footer-lastPart">
+          <div>
+            <p style="color: #fff; font-size: 12px">Besnik Creative Agency.</p>
+          </div>
+          <div>
+            <img class="lastLogo" src="./images/last-logo.png" alt="" />
+          </div>
+          <div class="footer-icon">
+            <i
+              class="fa-brands fa-square-twitter fa-xl"
+              style="margin-right: 3px"
+            ></i>
+            <i
+              class="fa-brands fa-instagram fa-xl"
+              style="margin-right: 3px"
+            ></i>
+            <i
+              class="fa-brands fa-facebook fa-xl"
+              style="margin-right: 3px"
+            ></i>
+            <i
+              class="fa-brands fa-linkedin fa-xl"
+            ></i>
+          </div>
+        </div>
+      </footer>
+      <!-- footer start end -->
     </header>
-</body>
+  </body>
 </html>
