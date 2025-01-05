@@ -214,7 +214,7 @@ nav > ul > li {
 }
 .news-card-container {
   display: flex;
-  /* gap: 75px; */
+  gap: 75px;
   justify-content: space-evenly;
 }
 .latest-textHeading {
@@ -454,7 +454,7 @@ ul > li > a {
     height: 249px;
     width: 358px;
     }
-  }
+
   /* latest news */
   .news-card-container {
     display: block;
