@@ -291,10 +291,36 @@ ul > li > a {
 }
 
 /* responsive start */
+@media screen and (min-width:577) and (max-width:768) {
+  /* nav */
+  .nav-container {
+    display: block;
+
+  }
+  /* .nav-input {
+    padding-left: 30px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+  } */
+  /* .nav-btn {
+    padding: 15px 40px;
+    background-color: #217bf4;
+    color: white;
+    border: none;
+  } */
+  /* .nav-parent {
+    display: block;
+  } */
+  /* .nav-btn-section {
+    margin-top: 15px;
+  } */
+}
 @media screen and (max-width: 576px) {
   .nav-container {
     display: block;
     height: 100%;
+    width: 100%;
   }
   .nav-input {
     padding-left: 30px;
@@ -398,19 +424,12 @@ ul > li > a {
     position: relative;
     margin-bottom: 30px;
   }
-  .active-text{
-    position: relative;
-    left: -72px;
-  
-  }
   .active-second-img {
-    position: relative;
-    left: -160px;
-    top: -15px;
+    left: 85px;
+    top: 15px;
   }
   .active-second3-img {
-    position: relative;
-    left: -175px;
+    left: 70px;
   }
   /* app section */
   .app-section-container {
