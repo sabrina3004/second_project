@@ -261,7 +261,6 @@ ul > li > a {
   margin-bottom: 34px;
   font-size: 16px;
 }
-
 .footer-btn {
   height: 40px;
   width: 270px;
@@ -297,29 +296,164 @@ ul > li > a {
 }
 
 /* responsive start */
-@media screen and (min-width: 577) and (max-width: 768) {
-  /* nav */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  /* Navigation */
   .nav-container {
+    padding: 15px;
+    height: auto;
     display: block;
   }
-  /* .nav-input {
-    padding-left: 30px;
-    height: 40px;
-    border-radius: 10px;
-    border: none;
-  } */
-  /* .nav-btn {
-    padding: 15px 40px;
-    background-color: #217bf4;
-    color: white;
-    border: none;
-  } */
-  /* .nav-parent {
+  .nav-btn-section {
+    margin-top: 15px; 
+  }
+  .nav-parent {
+    gap: 30px;
+  }
+  .nav-ul {
+    gap: 20px;
+  }
+  .nav-input {
+    width: 150px;
+    height: 45px;
+    margin-right: 20px;
+  }
+  
+  .nav-btn {
+    padding: 15px 30px;
+  }
+
+  /* Hero Section */
+  .hero-container {
+    height: auto;
+    padding: 60px 20px;
     display: block;
-  } */
-  /* .nav-btn-section {
-    margin-top: 15px;
-  } */
+  }
+  
+  .hero-heading {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .hero-btn {
+    padding: 12px 28px;
+  }
+  .hero-image {
+    width: 100%;
+    height: auto;
+    /* margin: auto; */
+
+  }
+
+  /* Netbook Section */
+  .netbook-container {
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 80px;
+    padding: 0 20px;
+  }
+  
+  .netbook_image {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .netbook-img img {
+    height: 300px;
+    width: auto;
+  }
+
+  /* Award Section */
+  .award_container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
+  }
+
+  /* Community Section */
+  .card-container {
+    grid-template-columns: repeat(1,1fr);
+    padding: 0 20px;
+  }
+  
+  .card {
+    padding: 25px;
+  }
+
+  /* Active Member Section */
+  .active-main-container {
+    margin-top: 400px;
+  }
+  .active-card {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .active-card-image {
+    padding: 30px;
+  }
+
+  /* App Section */
+  .app-section-container {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .app-img {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 40px;
+  }
+
+  /* News Section */
+  .news-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .news-card {
+    max-width: 400px;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  
+  .footer-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .footer-left-container {
+    /* text-align: center; */
+    /* position: relative; */
+    margin: auto;
+  }
+  
+  .footer-btn {
+    width: 100%;
+    max-width: 270px;
+    position: relative;
+  }
+  
+  .subscribe-btn {
+      height: 39.5px;
+      width: 110px;
+      position: relative;
+      left: 145.5px;
+      bottom: 39px;
+  }
+  
+  .footer-lastPart {
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 576px) {
   .nav-container {
@@ -382,6 +516,16 @@ ul > li > a {
     height: 300px;
   }
   /* netbook section */
+  .netbook_image {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .netbook-img img {
+    height: 300px;
+    width: auto;
+  }
   .netbook-container {
     margin-top: 130px;
     display: block;
@@ -391,13 +535,13 @@ ul > li > a {
     font-size: 30px;
     margin-bottom: 16px;
   }
-  .netbook_image {
+  /* .netbook_image {
     display: block;
   }
   .netbook-img {
     margin-top: 30px;
     margin-bottom: 30px;
-  }
+  } */
   /* award section */
   .award_container {
     grid-template-columns: repeat(1, 1fr);
@@ -428,17 +572,13 @@ ul > li > a {
     font-size: 10px;
   }
   .active-card {
-    display: block;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
   }
+  
   .active-card-image {
-    margin-bottom: 30px;
-  }
-  .active-second-img {
-    left: 65px;
-    top: 15px;
-  }
-  .active-second3-img {
-    left: 50px;
+    padding: 30px;
   }
   /* app section */
   .app-section-container {
@@ -457,7 +597,12 @@ ul > li > a {
 
   /* latest news */
   .news-card-container {
-    display: block;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .news-card {
+    max-width: 400px;
   }
   .latest-textHeading {
     color: #0a093d;
